@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "pacman DFS",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pacman.py",
+            "console": "integratedTerminal",
+            "args": ["-l", "mediumMaze", "-p", "SearchAgent"]
+        },
+
+        {
+            "name": "pacman BFS",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pacman.py",
+            "console": "integratedTerminal",
+            "args": ["-l", "mediumMaze", "-p", "SearchAgent", "-a", "fn=bfs"]
+        },
+
+        {
+            "name": "pacman corners",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pacman.py",
+            "console": "integratedTerminal",
+            "args": ["-l", "tinyCorners", "-p", "SearchAgent", "-a", "fn=bfs,prob=CornersProblem"]
+        },
+
+        {
+            "name": "pacman heuristic",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pacman.py",
+            "console": "integratedTerminal",
+            "args": ["-l", "mediumCorners", "-p", "AStarCornersAgent", "-z", "0.5"]
+        }
+
+    ]
+}

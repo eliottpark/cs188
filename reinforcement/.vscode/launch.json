@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "name": "value iteration(q1)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/gridworld.py",
+            "console": "integratedTerminal",
+            "args": ["-a", "value", "-i", "100", "-k", "10", "-t"]
+        },
+
+        {
+            "name": "prioritized sweeping (q5)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/gridworld.py",
+            "console": "integratedTerminal",
+            "args": ["-a", "priosweepvalue", "-i", "1000", "-t"]
+        },
+
+        {
+            "name": "q-learning (q6)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/gridworld.py",
+            "console": "integratedTerminal",
+            "args": ["-a", "q", "-k", "5", "--noise", "0.0", "-t"]
+        }
+    ]
+}
